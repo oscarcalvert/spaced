@@ -223,6 +223,11 @@ header span:hover {
     color: var(--primary);
 }
 
+.desktop-footer-element3 small {
+    display: flex;
+    flex-direction: column;
+}
+
 .text-emphasis {
     background-image: url(../images/background-test.png);
     background-size: cover;
@@ -274,7 +279,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-block: 5em;
+    margin-block: 10em;
 }
 .feature-list-element {
     max-width: 20em;
@@ -433,8 +438,16 @@ section {
     margin-inline: 2em;
 }
 
+.centered {
+    text-align: center;
+}
+
 .cta {
-    margin-block: 20vw;
+    padding-block: 10vw;
+    transition: all 1s;
+}
+.cta:hover {
+    scale: 1.05;
 }
 
 .contact img {
