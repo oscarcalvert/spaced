@@ -6,7 +6,7 @@
     --background: #080808;
     --background2: #0d0d0d;
     --primary: #6F36FF;
-    --outline: #151515;
+    --outline: #212121;
     --headerFont: poppins, impact;
     --mainFont: "open sans", impact;
     --logoFont: prompt, impact;
@@ -24,6 +24,7 @@ ul {
     background-color: var(--background2);
     color: var(--text);
     border-block: 1px solid var(--outline);
+    border-radius: 2em;
 }
 
 body {
@@ -65,6 +66,11 @@ h4 {
 h5 {
     font-size: 1.414rem;
 }
+
+p {
+    font-size: 1.2rem;
+}
+
 
 small {
     font-size: 0.707rem;
@@ -222,7 +228,13 @@ header span:hover {
 }
 
 .text-emphasis {
-    color: var(--primary);
+    background-image: url(../images/background-test.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: var(--text);
 }
 
 .hero h5 {
@@ -242,6 +254,12 @@ header span:hover {
     border-radius: 1em;
     margin-block-start: 1em;
     font-size: 1.5em;
+    transition: all 0.4s;
+}
+
+.hero .hero-btn:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 5px 70px rgba(112, 56, 255, 0.15);
 }
 
 .hero .hero-btn * {
@@ -267,9 +285,22 @@ section {
     text-align: center;
     min-height: 30em;
     justify-content: center;
+    margin-block: 1em;
 }
 
-@media (max-width: 1000px) {
+section:nth-of-type(1) {
+    background-image: url(../images/hero_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section:nth-of-type(3) {
+    background-image: url(../images/hero_background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
 
     header .desktop,
     footer .desktop {
@@ -316,5 +347,11 @@ section {
     small {
         font-size: 0.800rem;
     }
-    
+
+}
+
+@media (min-width: 768px) {
+    section {
+        padding-inline: 20vw;
+    }
 }
