@@ -84,11 +84,12 @@
             <div class="single-feature-text">
                 <h3>Proven to improve health</h3>
                 <p>
-                    At spaced, we thrive to improve all aspects of your experience, inculding your physical and mental health.
+                    At spaced, we thrive to improve all aspects of your experience, inculding your physical and mental
+                    health.
                 </p>
                 <div>
                     <a href="./booking" class="buy-now-btn">
-                        <span>Buy now</span><i class="fa-solid fa-angle-right"></i>
+                        <span>Get Started</span><i class="fa-solid fa-angle-right"></i>
                     </a>
                 </div>
             </div>
@@ -116,7 +117,7 @@
                         <i class="fa-solid fa-1 how-it-works-icon"></i>
                         <h4>Book</h4>
                         <p>Book an package on our website or in person. <br>Prices starting at $19.99*.</p>
-                        
+
                     </div>
                     <div class="how-it-works-element">
                         <i class="fa-solid fa-2 how-it-works-icon"></i>
@@ -129,12 +130,12 @@
                         <p>Unlock the maximum your brain has to offer. <br>Notice an increase in wellbeing.</p>
                     </div>
                 </div>
-                    <a href="./booking" class="buy-now-btn">
-                        <span>Buy now</span><i class="fa-solid fa-angle-right"></i>
-                    </a>
-                    <a href="./aboutus" class="learn-more-btn">
-                        <span>Learn More</span><i class="fa-solid fa-angle-right"></i>
-                    </a>
+                <a href="./booking" class="buy-now-btn">
+                    <span>Get Started</span><i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="./aboutus" class="learn-more-btn">
+                    <span>Learn More</span><i class="fa-solid fa-angle-right"></i>
+                </a>
             </div>
         </section>
         <section>
@@ -149,7 +150,7 @@
                     </div>
                     <div class="users">
                         <div class="profilepicture">
-                        <img  src="./images/profilepicture.png" alt="elon musk" height="70">
+                            <img src="./images/profilepicture.png" alt="elon musk" height="70">
                         </div>
                         <div class="company">
                             <i class="fa-brands fa-x-twitter"></i>
@@ -159,7 +160,8 @@
                 </div>
                 <div class="vertical-line"></div>
                 <div class="testimonial-text">
-                    <h5>Thanks to spaced's cutting edge technology, I am no longer showing signs of alzheimer's, and I can remember my kid's name perfectly!</h5>
+                    <h5>Thanks to spaced's cutting edge technology, I am no longer showing signs of alzheimer's, and I
+                        can remember my kid's name perfectly!</h5>
                 </div>
             </div>
         </section>
@@ -170,7 +172,7 @@
             </div>
             <div>
                 <a href="./booking" class="buy-now-btn">
-                    <span>Buy now</span><i class="fa-solid fa-angle-right"></i>
+                    <span>Get Started</span><i class="fa-solid fa-angle-right"></i>
                 </a>
                 <a href="./aboutus" class="learn-more-btn">
                     <span>Learn More</span><i class="fa-solid fa-angle-right"></i>
@@ -183,40 +185,220 @@
                 <span>Have a question or want to learn more? Get in touch with us.</span>
             </div>
             <div class="contact-area">
-                <div class="contact-cards">
-                    <div>
+                <div>
+                    <div class="contact-card">
                         <i class="fa-solid fa-envelope"></i>
                         <h5>Email</h5>
                         <p>Send us an email!</p>
                         <a href="mailto:6231332@cegep-heritage.qc.ca">6231332@cegep-heritage.qc.ca</a>
                     </div>
-                    <div>
+                    <div class="contact-card">
                         <i class="fa-solid fa-phone"></i>
                         <h5>Phone</h5>
                         <p>Give us a call!</p>
                         <a href="tel:8199189437">(819) 918-9437</a>
                     </div>
-                    <div>
+                    <div class="contact-card">
                         <i class="fa-solid fa-location-dot"></i>
                         <h5>Office</h5>
-                        <p>325, boulvard de la cite-des-jeunes
-                            Gatineau, QC
-                            Canada
-                            J8Y 6T3</p>
+                        <p>325, boulvard de la cite-des-jeunes Gatineau, <br>
+                            QC Canada J8Y 6T3</p>
+                        <div>
                             <a href="./aboutus" class="learn-more-btn">
                                 <span>Learn More</span><i class="fa-solid fa-angle-right"></i>
                             </a>
+                        </div>
                     </div>
                 </div>
                 <div class="support-image-container">
-                <img src="./images/support.jpg" alt="man awsnering the phone" class="desktop support-image">
+                    <img src="./images/support.jpg" alt="man awsnering the phone" class="desktop support-image">
+                </div>
+            </div>
+            <div class="form-area">
+                <h4>Or fill out this form.</h4>
+                <form action="./contactCompletion.html" class="contactform">
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <input type="text" placeholder="Full Name" id="custName" name="custName" required> <br>
+                        <input type="email" placeholder="Email" id="custEmail" name="custEmail" required> <br>
+                        <input type="tel" placeholder="Phone Number" name="custTel" id="custTel" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contact</legend>
+                        <textarea rows="4" placeholder="Question or issue (please be precise)" id="custIssue"
+                            name="custIssue" required></textarea>
+                        <p>Reason for contact:</p>
+                        <div>
+                            <input type="radio" id="issueType" name="contactType" value="issue" required>
+                            <label for="issueType">Issue</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="questionType" name="contactType" value="question" required>
+                            <label for="questionType">Question</label>
+                        </div>
+                    </fieldset>
+                    <div class="form-completion">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear Form">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="pricing">
+            <h3>Pricing Options</h3>
+            <p>Choose the plan that suits your needs and budget.</p>
+            <div class="price-flex-wrapper">
+                <div class="price-flex-element">
+                    <h5>Basic Plan</h5>
+                    <p>Perfect for your basic needs</p>
+                    <div class="horizontal-line"></div>
+                    <h4>$19/hr</h4>
+
+                    <a href="./purchaseCompletion.html">
+                        <div class="pricing-btn">Get started</div>
+                    </a>
+                    <div class="horizontal-line"></div>
+                    <div class="perks">
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>Vague recollection</li>
+                            <li><i class="fa-solid fa-check"></i>Template memories</li>
+                            <li><i class="fa-solid fa-check"></i>Basic waitlist</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-flex-element">
+                    <h5>Normal Plan</h5>
+                    <p>Ideal package for everyone.</p>
+                    <div class="horizontal-line"></div>
+                    <h4>$39/hr</h4>
+
+                    <a href="./purchaseCompletion.html">
+                        <div class="pricing-btn">Get started</div>
+                    </a>
+                    <div class="horizontal-line"></div>
+                    <div class="perks">
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>Average recollection</li>
+                            <li><i class="fa-solid fa-check"></i>Temlpate memories</li>
+                            <li><i class="fa-solid fa-check"></i>Normal waitlist</li>
+                            <li><i class="fa-solid fa-plus"></i>10 year warranty</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-flex-element">
+                    <h5>Premium Plan</h5>
+                    <p>Memories taylored to you.</p>
+                    <div class="horizontal-line"></div>
+                    <h4>$99/hr</h4>
+
+                    <a href="./purchaseCompletion.html">
+                        <div class="pricing-btn">Get started</div>
+                    </a>
+                    <div class="horizontal-line"></div>
+                    <div class="perks">
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>Extreme recollection</li>
+                            <li><i class="fa-solid fa-check"></i>Custom memories</li>
+                            <li><i class="fa-solid fa-check"></i>Premium waitlist</li>
+                            <li><i class="fa-solid fa-plus"></i>Lifetime warranty</li>
+                            <li><i class="fa-solid fa-plus"></i>Cogni 2.0 trauma removal</li>
+                            <li><i class="fa-solid fa-plus"></i>Memory enhancement</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="pricing"></section>
-        <section class="faq"></section>
-        <section class="team"></section>
-        <section class="job-listings"></section>
+        <section class="faq">
+            <h3>FAQ</h3>
+            <p>Find answers to frequently asked questions about our services</p>
+            <ul id="accordian">
+                <li>
+                    <h5><label for="faq1">How does it work?</label></h5>
+                    <input type="checkbox" name="accordian" id="faq1">
+                    <div class="faq-content">
+                        <label for="faq1">
+                                By leveraging advanced neural networks and artificial intelligence
+                            algorithms spaced created, we can create vivid and realistic memories that feel completely authentic.
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <h5><label for="faq2">Is it safe?</label></h5>
+                    <input type="checkbox" name="accordian" id="faq2">
+                    <div class="faq-content">
+                        <label for="faq">
+                            Safety is our top priority. Our brainchip technology has undergone rigorous testing and
+                            meets all necessary regulatory standards. We ensure that the implantation process is
+                            performed by highly trained professionals, minimizing any potential risks or side effects.
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <h5><label for="faq3">Can anyone get it?</label></h5>
+                    <input type="checkbox" name="accordian" id="faq3">
+                    <div class="faq-content">
+                        <label for="faq">
+                            Our technology is suitable for most individuals. However, we conduct thorough
+                            assessments to determine if a person is a suitable candidate for the procedure. Factors such
+                            as overall health, mental stability, and specific medical conditions are taken into
+                            consideration.
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <h5><label for="faq4">Are the memories permanent?</label></h5>
+                    <input type="checkbox" name="accordian" id="faq4">
+                    <div class="faq-content">
+                        <label for="faq">
+                            The memories created through our brainchip technology are designed to be long-lasting.
+                            We provide ongoing support and counseling to ensure that our customers have control over
+                            their memories.
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <h5><label for="faq5">What are the benefits?</label></h5>
+                    <input type="checkbox" name="accordian" id="faq5">
+                    <div class="faq-content">
+                        <label for="faq">
+                            Our brainchip technology offers a range of benefits, including the ability to relive
+                            cherished moments, overcome traumatic experiences, and in some cases even overcome
+                            alzheimer's. It opens up new possibilities for personal growth and self-improvement.
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Our Team</h3>
+            <p>Get to know the talented individuals behind our company.</p>
+            <div class="team">
+                <div class="team-member">
+                    <img src="./images/connor.png" alt="connor greene" height="200">
+                    <h5>Connor Greene</h5>
+                    <p>The Joker</p>
+                    <small>Batman's arch-nemesis, a psychotic criminal mastermind who thrives on chaos and anarchy.</small>
+                </div>
+                <div class="team-member">
+                    <img src="./images/jenny.png" alt="jenny" height="200">
+                    <h5>Jenny</h5>
+                    <p>Harley Quinn</p>
+                    <small>Originally the Joker's psychiatrist, she becomes his partner in crime and a recurring adversary for Batman.</small>
+                </div>
+                <div class="team-member">
+                    <img src="./images/joshua.png" alt="joshua" height="200">
+                    <h5>Joshua</h5>
+                    <p>Batman</p>
+                    <small>The billionaire playboy who becomes the masked vigilante, Batman.</small>
+                </div>
+                <div class="team-member">
+                    <img src=".//images/jacob.png" alt="jacob" height="200">
+                    <h5>Jacob</h5>
+                    <p>The Butler</p>
+                    <small>Bruce Wayne's loyal butler and father figure, who also assists Batman with his crime fighting.</small>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
