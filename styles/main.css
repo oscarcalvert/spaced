@@ -444,10 +444,10 @@ section {
 
 .cta {
     padding-block: 10vw;
-    transition: all 1s;
+    transition: all 0.4s;
 }
 .cta:hover {
-    scale: 1.05;
+    filter: brightness(1.5);
 }
 
 .contact img {
@@ -596,7 +596,14 @@ section {
 .team small {
     color: var(--text2);
 }
-
+.team-socials {
+    margin-block: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 5px;
+    font-size: 1.5em;
+}
 @media (max-width: 768px) {
 
     header .desktop,
