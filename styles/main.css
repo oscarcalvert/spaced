@@ -2,6 +2,7 @@
 
 :root {
     --text: #e8ebee;
+    --text2: #9b9d9f;
     --background: #080808;
     --background2: #101010;
     --primary: #6F36FF;
@@ -65,6 +66,9 @@ header * {
 }
 header a {
     text-decoration: none;
+    color: var(--text2);
+}
+header .current {
     color: var(--text);
 }
 header span {
@@ -86,6 +90,7 @@ header ul {
 }
 header .nav-socials i {
     font-size: 2em;
+    color: var(--text);
 }
 header .nav-socials .socials-container {
     text-align: end;
@@ -104,6 +109,29 @@ header .nav-socials {
 header .mobile {
     text-align: center;
     border-block-end: 1px solid var(--outline);
+}
+
+footer .desktop {
+    display: flex;
+    justify-content: space-around;
+    border-block-start: 1px solid var(--outline);
+    padding: 1em;
+}
+
+footer .desktop ul {
+    list-style: none;
+    padding: 0;
+}
+footer .desktop > div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 20em;
+}
+footer .desktop a {
+    text-decoration: none;
+    color: var(--text2);
 }
 
 footer .mobile{
@@ -128,14 +156,23 @@ footer .mobile ul a{
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: var(--text);
+    color: var(--text2);
     text-decoration: none;
+}
+
+footer .mobile ul .current {
+    color: var(--text);
+}
+
+footer .desktop ul .current {
+    color: var(--text);
 }
 
 @media (max-width: 1200px) {
     header .desktop, footer .desktop {
         display: none;
     }
+
     header .mobile, footer .mobile {
         display: block;
     }
