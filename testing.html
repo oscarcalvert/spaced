@@ -24,7 +24,7 @@
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./booking.html">Booking</a></li>
                     <li><a href="./aboutus.html">About Us</a></li>
-                    <li><a href="./support.html">Support</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
                 </ul>
             </div>
             <div class="nav-socials">
@@ -88,7 +88,7 @@
                     health.
                 </p>
                 <div>
-                    <a href="./booking" class="buy-now-btn">
+                    <a href="./booking.html" class="buy-now-btn">
                         <span>Get Started</span><i class="fa-solid fa-angle-right"></i>
                     </a>
                 </div>
@@ -130,7 +130,7 @@
                         <p>Unlock the maximum your brain has to offer. <br>Notice an increase in wellbeing.</p>
                     </div>
                 </div>
-                <a href="./booking" class="buy-now-btn">
+                <a href="./booking.html" class="buy-now-btn">
                     <span>Get Started</span><i class="fa-solid fa-angle-right"></i>
                 </a>
                 <a href="./aboutus" class="learn-more-btn">
@@ -171,7 +171,7 @@
                 <p>Experience the future - and past.</p>
             </div>
             <div>
-                <a href="./booking" class="buy-now-btn">
+                <a href="./booking.html" class="buy-now-btn">
                     <span>Get Started</span><i class="fa-solid fa-angle-right"></i>
                 </a>
                 <a href="./aboutus" class="learn-more-btn">
@@ -219,14 +219,14 @@
                 <form action="./contactCompletion.html" class="contactform">
                     <fieldset>
                         <legend>Personal Info</legend>
-                        <input type="text" placeholder="Full Name" id="custName" name="custName" required> <br>
-                        <input type="email" placeholder="Email" id="custEmail" name="custEmail" required> <br>
-                        <input type="tel" placeholder="Phone Number" name="custTel" id="custTel" required>
+                        <input type="text" placeholder="Full Name" id="questionName" name="questionName" required> <br>
+                        <input type="email" placeholder="Email" id="questionEmail" name="questionEmail" required> <br>
+                        <input type="tel" placeholder="Phone Number" name="questionTel" id="questionTel" required>
                     </fieldset>
                     <fieldset>
                         <legend>Contact</legend>
-                        <textarea rows="4" placeholder="Question or issue (please be precise)" id="custIssue"
-                            name="custIssue" required></textarea>
+                        <textarea rows="4" placeholder="Question or issue (please be precise)" id="TypeOfIssue"
+                            name="TypeOfIssue" required></textarea>
                         <p>Reason for contact:</p>
                         <div>
                             <input type="radio" id="issueType" name="contactType" value="issue" required>
@@ -247,66 +247,74 @@
         <section class="pricing">
             <h3>Pricing Options</h3>
             <p>Choose the plan that suits your needs and budget.</p>
-            <div class="price-flex-wrapper">
-                <div class="price-flex-element">
-                    <h5>Basic Plan</h5>
-                    <p>Perfect for your basic needs</p>
-                    <div class="horizontal-line"></div>
-                    <h4>$19/hr</h4>
-
-                    <a href="./purchaseCompletion.html">
-                        <div class="pricing-btn">Get started</div>
-                    </a>
-                    <div class="horizontal-line"></div>
-                    <div class="perks">
-                        <ul>
-                            <li><i class="fa-solid fa-check"></i>Vague recollection</li>
-                            <li><i class="fa-solid fa-check"></i>Template memories</li>
-                            <li><i class="fa-solid fa-check"></i>Basic waitlist</li>
-                        </ul>
+            <form action="./purchaseCompletion.html">
+                <div class="price-flex-wrapper">
+                    <div class="price-flex-element">
+                        <h5>Basic Plan</h5>
+                        <p>Perfect for your basic needs</p>
+                        <div class="horizontal-line"></div>
+                        <h4>$19/hr</h4>
+                        <div class="package-selection">
+                            <input type="radio" name="prices" id="price-option1" class="hide-checkbox" value="price1">
+                            <span><label for="price-option1">Get Started</label></span>
+                        </div>
+                        <div class="horizontal-line"></div>
+                        <div class="perks">
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i>Vague recollection</li>
+                                <li><i class="fa-solid fa-check"></i>Template memories</li>
+                                <li><i class="fa-solid fa-check"></i>Basic waitlist</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-flex-element">
+                        <h5>Normal Plan</h5>
+                        <p>Ideal package for everyone.</p>
+                        <div class="horizontal-line"></div>
+                        <h4>$39/hr</h4>
+                        <div class="package-selection">
+                            <input type="radio" name="prices" id="price-option2" class="hide-checkbox" value="price2">
+                            <span><label for="price-option2">Get Started</label></span>
+                        </div>
+                        <div class="horizontal-line"></div>
+                        <div class="perks">
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i>Average recollection</li>
+                                <li><i class="fa-solid fa-check"></i>Temlpate memories</li>
+                                <li><i class="fa-solid fa-check"></i>Normal waitlist</li>
+                                <li><i class="fa-solid fa-plus"></i>10 year warranty</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-flex-element">
+                        <h5>Premium Plan</h5>
+                        <p>Memories taylored to you.</p>
+                        <div class="horizontal-line"></div>
+                        <h4>$99/hr</h4>
+                        <div class="package-selection">
+                            <input type="radio" name="prices" id="price-option3" class="hide-checkbox" value="price3">
+                            <span><label for="price-option3">Get Started</label></span>
+                            
+                        </div>
+                        <div class="horizontal-line"></div>
+                        <div class="perks">
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i>Extreme recollection</li>
+                                <li><i class="fa-solid fa-check"></i>Custom memories</li>
+                                <li><i class="fa-solid fa-check"></i>Premium waitlist</li>
+                                <li><i class="fa-solid fa-plus"></i>Lifetime warranty</li>
+                                <li><i class="fa-solid fa-plus"></i>Cogni 2.0 trauma removal</li>
+                                <li><i class="fa-solid fa-plus"></i>Memory enhancement</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="price-flex-element">
-                    <h5>Normal Plan</h5>
-                    <p>Ideal package for everyone.</p>
-                    <div class="horizontal-line"></div>
-                    <h4>$39/hr</h4>
-
-                    <a href="./purchaseCompletion.html">
-                        <div class="pricing-btn">Get started</div>
-                    </a>
-                    <div class="horizontal-line"></div>
-                    <div class="perks">
-                        <ul>
-                            <li><i class="fa-solid fa-check"></i>Average recollection</li>
-                            <li><i class="fa-solid fa-check"></i>Temlpate memories</li>
-                            <li><i class="fa-solid fa-check"></i>Normal waitlist</li>
-                            <li><i class="fa-solid fa-plus"></i>10 year warranty</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="price-flex-element">
-                    <h5>Premium Plan</h5>
-                    <p>Memories taylored to you.</p>
-                    <div class="horizontal-line"></div>
-                    <h4>$99/hr</h4>
-
-                    <a href="./purchaseCompletion.html">
-                        <div class="pricing-btn">Get started</div>
-                    </a>
-                    <div class="horizontal-line"></div>
-                    <div class="perks">
-                        <ul>
-                            <li><i class="fa-solid fa-check"></i>Extreme recollection</li>
-                            <li><i class="fa-solid fa-check"></i>Custom memories</li>
-                            <li><i class="fa-solid fa-check"></i>Premium waitlist</li>
-                            <li><i class="fa-solid fa-plus"></i>Lifetime warranty</li>
-                            <li><i class="fa-solid fa-plus"></i>Cogni 2.0 trauma removal</li>
-                            <li><i class="fa-solid fa-plus"></i>Memory enhancement</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                    <input type="text" placeholder="Full Name" id="custName" name="custName" required> <br>
+                    <input type="email" placeholder="Email" id="custEmail" name="custEmail" required> <br>
+                    <input type="tel" placeholder="Phone Number" name="custTel" id="custTel" required>
+                    <input type="password" placeholder="Credit Card (DONT ACTUALLY ENTER)" name="custCard" id="custCard" required>
+                    <input type="submit" value="Purchase">
+            </form>
         </section>
         <section class="faq">
             <h3>FAQ</h3>
@@ -326,7 +334,7 @@
                     <h5><label for="faq2">Is it safe?</label></h5>
                     <input type="checkbox" name="accordian" id="faq2">
                     <div class="faq-content">
-                        <label for="faq">
+                        <label for="faq2">
                             Safety is our top priority. Our brainchip technology has undergone rigorous testing and
                             meets all necessary regulatory standards. We ensure that the implantation process is
                             performed by highly trained professionals, minimizing any potential risks or side effects.
@@ -337,7 +345,7 @@
                     <h5><label for="faq3">Can anyone get it?</label></h5>
                     <input type="checkbox" name="accordian" id="faq3">
                     <div class="faq-content">
-                        <label for="faq">
+                        <label for="faq3">
                             Our technology is suitable for most individuals. However, we conduct thorough
                             assessments to determine if a person is a suitable candidate for the procedure. Factors such
                             as overall health, mental stability, and specific medical conditions are taken into
@@ -349,7 +357,7 @@
                     <h5><label for="faq4">Are the memories permanent?</label></h5>
                     <input type="checkbox" name="accordian" id="faq4">
                     <div class="faq-content">
-                        <label for="faq">
+                        <label for="faq4">
                             The memories created through our brainchip technology are designed to be long-lasting.
                             We provide ongoing support and counseling to ensure that our customers have control over
                             their memories.
@@ -360,7 +368,7 @@
                     <h5><label for="faq5">What are the benefits?</label></h5>
                     <input type="checkbox" name="accordian" id="faq5">
                     <div class="faq-content">
-                        <label for="faq">
+                        <label for="faq5">
                             Our brainchip technology offers a range of benefits, including the ability to relive
                             cherished moments, overcome traumatic experiences, and in some cases even overcome
                             alzheimer's. It opens up new possibilities for personal growth and self-improvement.
@@ -413,7 +421,6 @@
                     <li><a href="./booking.html">Booking</a></li>
                     <li><a href="./aboutus.html">About Us</a></li>
                     <li><a href="./support.html">Support</a></li>
-                    <li><a href="./offices.html">Offices</a></li>
                     <li><a href="./faq.html">FAQ</a></li>
                 </ul>
             </div>
@@ -446,7 +453,7 @@
                     <li><a href="./index.html"><i class="fa-solid fa-house"></i>Home</a></li>
                     <li><a href="./booking.html"><i class="fa-solid fa-bookmark"></i>Booking</a></li>
                     <li><a href="./aboutus.html"><i class="fa-solid fa-circle-info"></i>About Us</a></li>
-                    <li><a href="./support.html"><i class="fa-solid fa-question"></i>Support</a></li>
+                    <li><a href="./faq.html"><i class="fa-solid fa-question"></i>FAQ</a></li>
                 </ul>
             </div>
         </div>
