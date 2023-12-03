@@ -4,7 +4,7 @@
     --text: #e8ebee;
     --text2: #9b9d9f;
     --background: #080808;
-    --background2: #0d0d0d;
+    --background2: #0b0b0b;
     --primary: #6F36FF;
     --outline: #212121;
     --headerFont: poppins, impact;
@@ -278,7 +278,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-block: 4em;
+    padding-block: 4em;
 }
 .feature-list-element {
     max-width: 20em;
@@ -457,7 +457,7 @@ section {
 
 .centered {
     text-align: center;
-    margin-block-end: 10em;
+    padding-block-end: 5em;
 }
 
 .cta {
@@ -685,7 +685,7 @@ div[class="most-popular"]{
 .review-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1em;
 }
 .review-card {
@@ -696,6 +696,16 @@ div[class="most-popular"]{
 }
 .review-card > * {
     margin-block: 0.2em;
+}
+.reviews {
+    background-color: var(--background2);
+    padding-block: 5em;
+}
+
+.page-header {
+    background-image: url(../images/headerimg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @media (max-width: 768px) {
 
@@ -779,12 +789,14 @@ div[class="most-popular"]{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-inline: 5em;
+        padding-inline: 5em; 
     }
     .contactform textarea, input {
         width: 98%;
     }
     section {
-        margin-block: 10em;
+        padding-block: 10em;
     }
     header {
         position: fixed;
@@ -802,9 +814,5 @@ div[class="most-popular"]{
     }
     .testimonials {
         padding: 5em;
-    }
-    .cta {
-        margin-inline: 5em;
-        padding-inline: 5em;   
     }
 }
