@@ -351,6 +351,7 @@ section {
     background-color: var(--background2);
 }
 
+
 .single-feature-text, .video-testomonial-text {
     min-height: 20em;
     max-width: 30em;
@@ -814,5 +815,8 @@ div[class="most-popular"]{
     }
     .testimonials {
         padding: 5em;
+    }
+    .single-feature{
+        padding-block: 0;
     }
 }
