@@ -343,7 +343,7 @@ section {
     transform: translateY(-5px);
 }
 
-.single-feature {
+.single-feature, .video-testomonial {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -352,13 +352,21 @@ section {
     border: 1px solid var(--outline);
 }
 
-.single-feature-text {
+.single-feature-text, .video-testomonial-text {
     min-height: 20em;
     max-width: 30em;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 
 .feature-image-wrapper {
     display: flex;
