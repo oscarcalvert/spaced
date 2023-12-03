@@ -235,7 +235,6 @@ header span:hover {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    -webkit-text-stroke: var(--text);
 }
 
 .hero h5 {
@@ -288,11 +287,11 @@ section {
 
 .feature-list-element > i {
     font-size: 2em;
-    margin-block: 0.5em;
+    margin-block-start: 0.5em;
 }
 
 .feature-list-element > * {
-    margin-block: 0.5em;
+    margin-block: 0.2em;
 }
 
 .how-it-works-element {
@@ -302,11 +301,12 @@ section {
 
 .how-it-works-element > i {
     font-size: 2em;
-    margin-block: 0.5em;
+    margin-block-start: 0.5em;
+    color: var(--text2);
 }
 
 .how-it-works-element > * {
-    margin-block: 0.5em;
+    margin-block: 0.2em;
 }
 
 .learn-more-btn {
@@ -349,7 +349,6 @@ section {
     flex-direction: row;
     max-height: 38em;
     background-color: var(--background2);
-    border: 1px solid var(--outline);
 }
 
 .single-feature-text, .video-testomonial-text {
@@ -358,6 +357,11 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.video-testomonial {
+    padding-block: 1em;
+    border: none;
 }
 
 .video {
@@ -403,14 +407,13 @@ section {
 .testimonials {
     display: flex;
     flex-direction: column;
-    background-color: var(--background2);
-    border: 1px solid var(--outline);
     display: inline-block;
-    padding-block: 4em;
+    background-color: var(--background2);
+    border-radius: 3em;
 }
 
 .testimonial-text h5 {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .testimonial-text {
@@ -422,6 +425,12 @@ section {
 
 .stars {
     margin-block: 1em;
+    background-image: url(../images/background-test.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .testimonial-user {
@@ -452,11 +461,15 @@ section {
 }
 
 .cta {
-    padding-block: 10vw;
     transition: all 0.4s;
-}
-.cta:hover {
-    filter: brightness(1.5);
+    background-image: url(../images/background-test.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--background);
+    border-radius: 3em;
+    margin-block: 5em;
+    padding-block: 5em;
+    margin-inline: 5vw;
 }
 
 .contact img {
@@ -480,8 +493,12 @@ section {
     margin-block: 4em;
 }
 
+.contact-card > * {
+    margin-block: 0em;
+    padding: 0.2em;
+}
+
 .contact-card > i {
-    margin-block: 1em 1em;
     font-size: 1.5em;
 }
 
@@ -524,6 +541,32 @@ section {
 }
 .pricing ul {
     list-style: none;
+}
+div[class="most-popular-container1"] {
+    background-image: url(../images/background-test.png);
+    margin: 0;
+    padding: 0;
+    border-radius: 1em;
+}
+
+div[class="most-popular-container2"] {
+    background-color: var(--background2);
+    margin: 2px;
+    display: inline-block;
+    width: 98.5%;
+    border-radius: 1em;
+}
+
+div[class="most-popular"]{
+    text-align: center;
+    background-image: url(../images/background-test.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-block: 4px;
+    user-select: none;
 }
 .horizontal-line {
     border: 1px solid var(--outline);
@@ -639,6 +682,21 @@ section {
     padding: 2em;
     border-radius: 1em;
 }
+.review-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+.review-card {
+    max-width: 250px;
+}
+.review-card img {
+    border-radius: 100%;
+}
+.review-card > * {
+    margin-block: 0.2em;
+}
 @media (max-width: 768px) {
 
     header .desktop,
@@ -741,5 +799,12 @@ section {
     .price-flex-element {
         min-width: 15em;
         min-height: 33em;
+    }
+    .testimonials {
+        padding: 5em;
+    }
+    .cta {
+        margin-inline: 5em;
+        padding-inline: 5em;   
     }
 }
