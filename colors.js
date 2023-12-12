@@ -19,6 +19,6 @@ window.onload = function() {
     var siteColor = localStorage.getItem('stylesheet');
 
     if (siteColor) {
-        colorpreference.setAttribute('href', stylesheet);
+        colorpreference.setAttribute('href', siteColor);
     }
  };
