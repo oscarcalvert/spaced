@@ -738,8 +738,7 @@ div[class="most-popular"]{
     max-width: 250px;
 }
 .review-card img {
-    border-radius: 100%;
-    filter: invert(1);
+    border-radius: 100%;    
 }
 .review-card > * {
     margin-block: 0.2em;
