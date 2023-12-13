@@ -266,10 +266,14 @@ header span:hover {
     text-align: center;
 }
 .hero > * {
-    margin-block: 1em;
+    padding-block-start: 1em;
 }
 .hero{
     padding-inline: 5vi;
+    background-image: url(../images/herobackgroundLight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 86vh;
 }
 
 section {
@@ -369,7 +373,7 @@ section {
 .buy-now-btn-2 {
     display: inline-block;
     border: 1px solid var(--primary);
-    background-color: var(--background);
+    background-color: none;
     padding: 0.5em 1em;
     border-radius: 5px;
     transition: all 0.4s;
@@ -735,6 +739,7 @@ div[class="most-popular"]{
 }
 .review-card img {
     border-radius: 100%;
+    filter: invert(1);
 }
 .review-card > * {
     margin-block: 0.2em;
@@ -873,7 +878,7 @@ div[class="most-popular"]{
         z-index: 1;
     }
     .hero {
-        margin-block-start: 10em;
+        padding-block-start: 10em;
     }
     .price-flex-element {
         min-width: 15em;
