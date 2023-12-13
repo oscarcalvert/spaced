@@ -326,6 +326,30 @@ section {
 .learn-more-btn:hover {
     color: var(--text);
 }
+.learn-more-btn-2 {
+    display: inline-block;
+    padding: 0.5em 0em;
+    transition: all 0.4s;
+    margin-block: 0.4em;
+    color: var(--text2);
+    border-block-end: 1px solid var(--text2);
+}
+.learn-more-btn-2 span {
+    margin-inline-end: 0.53em;
+}
+.learn-more-btn-2 i {
+    transition: all 0.6s;
+}
+.learn-more-btn-2:hover {
+    color: var(--text);
+    border-block-color: var(--text);
+    
+}
+.learn-more-btn-2:hover i {
+    transform: translateX(0.3em);
+    margin-inline-end: 0.3em;
+}
+
 .buy-now-btn {
     display: inline-block;
     background-color: var(--primary);
@@ -341,6 +365,24 @@ section {
 
 .buy-now-btn:hover {
     transform: translateY(-5px);
+}
+.buy-now-btn-2 {
+    display: inline-block;
+    border: 1px solid var(--primary);
+    background-color: var(--background);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: all 0.4s;
+    margin-block: 0.4em;
+    color: var(--text);
+}
+.buy-now-btn-2 span {
+    margin-inline-end: 0.5em;
+}
+
+.buy-now-btn-2:hover {
+    transform: translateY(-5px);
+    color: var(--primary);
 }
 
 .single-feature, .video-testomonial {
