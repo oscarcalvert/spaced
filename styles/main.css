@@ -82,7 +82,7 @@ header .desktop {
     display: flex;
     justify-content: space-between;
     padding-inline: 4em;
-    border-block-end: 1px solid var(--outline);
+    background-color: none;
 }
 
 header>.desktop>* {
@@ -698,6 +698,10 @@ div[class="most-popular"]{
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1em;
+    
+}
+.team-container {
+    background-color: var(--background2);
 }
 .team-member {
     max-width: 205px;
@@ -756,7 +760,7 @@ div[class="most-popular"]{
     background-size: cover;
 }
 #switch-style {
-    background-color: var(--background2);
+    background-color: transparent;
     border: none;
 }
 .hours {
@@ -780,6 +784,9 @@ div[class="most-popular"]{
 }
 .hours tr:nth-of-type(odd) td:nth-of-type(odd) {
     background-color: var(--background);
+}
+.sites-container ul {
+    list-style-image: url(../images/dot.png);
 }
 @media (max-width: 768px) {
 
@@ -876,8 +883,18 @@ div[class="most-popular"]{
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: var(--background2);
+        background-color: transparent;
         z-index: 1;
+    }
+    #desktop-header-placeholder {
+        background-color: transparent;
+        transition: all 0.4s;
+        border-block-end: 0px solid var(--outline);
+    }
+    #desktop-header {
+        background-color: var(--background2);
+        transition: all 0.4s;
+        border-block-end: 1px solid var(--outline);
     }
     .hero {
         padding-block-start: 10em;

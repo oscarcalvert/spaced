@@ -1,6 +1,7 @@
 // javascript code heavily inspired by https://stackoverflow.com/questions/14292997/changing-style-sheet-javascript
 var colorpreference = document.getElementById('stylesheet');
 
+
 document.getElementById('switch-style').addEventListener('click', function () {
 
     
@@ -24,3 +25,13 @@ window.onload = function() {
         colorpreference.setAttribute('href', siteColor);
     }
  };
+
+document.addEventListener("scroll", function () {
+    var headercolor = document.getElementById('desktop-header-placeholder')
+    if (window.scrollY > 100) {
+        headercolor.setAttribute('id', 'desktop-header')
+    }
+    else {
+        headercolor.setAttribute('id', 'desktop-header-placeholder')
+    }
+ });
