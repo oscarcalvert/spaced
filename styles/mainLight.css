@@ -383,14 +383,16 @@ section {
     transition: all 0.4s;
     margin-block: 0.4em;
     color: var(--text);
+    margin-block-start: 3em;
 }
 .buy-now-btn-2 span {
     margin-inline-end: 0.5em;
 }
 
 .buy-now-btn-2:hover {
-    transform: translateY(-5px);
-    color: var(--primary);
+    background-color: var(--primary);
+    color: var(--background);
+    transform: translateX(2px);
 }
 
 .single-feature, .video-testomonial {
