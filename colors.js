@@ -19,12 +19,12 @@ document.getElementById('switch-style').addEventListener('click', function () { 
 });
 
 document.addEventListener("scroll", function () {
-    if (window.scrollY > 100) {
+    if (window.scrollY != 0) {
         headercolor.setAttribute('id', 'desktop-header')
     }
 });
 document.addEventListener("scroll", function () {
-    if (window.scrollY <= 100) {
+    if (window.scrollY == 0) {
         headercolor.setAttribute('id', 'desktop-header-placeholder')
     }
 })

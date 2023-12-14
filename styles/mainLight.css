@@ -889,7 +889,7 @@ div[class="most-popular"]{
     #desktop-header-placeholder {
         background-color: transparent;
         transition: all 0.4s;
-        border-block-end: 0px solid var(--outline);
+        border-block-end: 1px solid transparent;
     }
     #desktop-header {
         background-color: var(--background2);
